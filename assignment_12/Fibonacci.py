@@ -1,0 +1,12 @@
+n=int(input("enter no. of terms you want:-"))
+t1=1
+t2=2
+next_term=t1+t2
+i=next_term
+print(t1,t2,end=' ')
+while(i<=n):
+    print(next_term,end=' ')
+    t1=t2
+    t2=next_term
+    next_term=(t1+t2)
+    i+=1
